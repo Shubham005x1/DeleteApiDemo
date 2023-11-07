@@ -1,0 +1,12 @@
+steps:
+  - name: "gcr.io/cloud-builders/gcloud"
+    args:
+      - functions
+      - deploy
+      - DeleteEmployeeBuild
+      - --runtime=go121
+      - --trigger-http
+      - --allow-unauthenticated
+      - --entry-point=DeleteEmployee
+      - --region=europe-west1
+      - --project=takeoff-task-3
