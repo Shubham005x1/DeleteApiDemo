@@ -36,7 +36,7 @@ func InitializeFirestore() {
 		var err error
 		client, err = firestore.NewClient(ctx, "takeoff-task-3")
 		if err != nil {
-			log.Fatalf("Failed to create Firestore client: %v", err)
+			log.Fatalf("Failed to create Firestore client::: %v", err)
 		}
 	})
 }
